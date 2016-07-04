@@ -13,6 +13,13 @@ app.controller('mainCtrl', function($scope, $state, $rootScope) {
 
   $scope.goBack = () =>
   $state.go('albums')
+
+  $scope.moreInfo =() => {
+    $state.go('imageInfo');
+  }
+  $scope.backToAlbum =() => {
+    $state.go('albumView');
+  }
 });
 
 // ******************************* /////
@@ -47,7 +54,6 @@ $scope.albums = [];
 
     function () {
        Album.deleteAlbum(id)
-       $scope.albums.splice(index, 1);
        swal("Deleted!", "Your album has been deleted", "success");
      });
 

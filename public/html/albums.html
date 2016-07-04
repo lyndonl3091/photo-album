@@ -25,7 +25,7 @@
       <th>Delete?</th>
     </thead>
     <tbody>
-      <tr ng-repeat='album in albums'>
+      <tr ng-repeat='album in albums' class='animated fadeIn'>
         <td><a ng-click='goTo($index)'>{{album.name}}</a></td>
         <td>
           <button class='btn btn-danger btn-xs' ng-click='deleteAlbum($index)'><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>

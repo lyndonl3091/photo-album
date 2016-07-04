@@ -8,6 +8,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('home', { url: '/', templateUrl: '/html/home.html' })
     .state('albums', { url: '/albums', templateUrl: '/html/albums.html', controller: 'albumCtrl' })
     .state('albumView', { url: '/albumView', templateUrl: '/html/albumView.html', controller: 'mainCtrl' })
+    .state('imageInfo', { url: '/albumView/imageInfo', templateUrl: '/html/imageInfo.html', controller: 'mainCtrl' })
 
 
   $urlRouterProvider.otherwise('/');
